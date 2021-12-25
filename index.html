@@ -18,8 +18,27 @@
 
         .card {
             width: 400px;
-            height: 250px;
+            height: 240px;
             border: 2px solid gray;
+            display: flex;
+            align-items: center;
+            padding: 5px;
+            background-color: lightskyblue;
+            border-radius: 5px;
+        }
+
+        .image {
+            width: 150px;
+            height: 150px;
+            margin-right: 5px;
+            border-radius: 100%;
+            overflow: hidden;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     </style>
 </head>
@@ -28,7 +47,14 @@
     <h1>Business card</h1>
     <div class="body">
         <div class="card">
-
+            <div class="image">
+                <img src="https://i.ibb.co/MyHZzTf/sindabad.jpg" alt="portrait">
+            </div>
+            <div class="card-body">
+                <p><b>Name:</b> Md. Sindabad</p>
+                <p><b>Phone:</b> +8801824886633</p>
+                <p><b>Email:</b> pavel.sindabad@gmail.com</p>
+            </div>
         </div>
     </div>
 </body>
